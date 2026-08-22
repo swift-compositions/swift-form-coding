@@ -5,7 +5,6 @@ import RFC_2046
 import Testing
 import URLFormCoding
 import WHATWG_HTML_FormData
-import WHATWG_HTML_Forms
 
 @testable import FormCoding
 
@@ -42,7 +41,7 @@ extension `Readme Verification Tests`.Integration {
     @Test
     func `multipart form data example from README`() throws {
         // `Form` here is the WHATWG HTML form-data model.
-        typealias Form = WHATWG_HTML_Forms.Form
+        typealias Form = WHATWG.HTML.Form
 
         let pngBytes: [UInt8] = [0x89, 0x50, 0x4E, 0x47]  // PNG signature
 
