@@ -1,6 +1,6 @@
 # swift-form-coding
 
-[![CI](https://github.com/coenttb/swift-form-coding/workflows/CI/badge.svg)](https://github.com/coenttb/swift-form-coding/actions/workflows/ci.yml)
+[![CI](https://github.com/swift-compositions/swift-form-coding/workflows/CI/badge.svg)](https://github.com/swift-compositions/swift-form-coding/actions/workflows/ci.yml)
 ![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
 
 A convenience umbrella package that re-exports all form coding functionality for Swift.
@@ -9,8 +9,8 @@ A convenience umbrella package that re-exports all form coding functionality for
 
 This package provides a single import for all form data encoding/decoding needs in Swift. It re-exports two independent packages:
 
-- **[swift-url-form-coding](https://github.com/coenttb/swift-url-form-coding)** - URL form encoding/decoding (`application/x-www-form-urlencoded`)
-- **[swift-multipart-form-coding](https://github.com/coenttb/swift-multipart-form-coding)** - Multipart form data with file uploads (`multipart/form-data`)
+- **[swift-url-form-coding](https://github.com/swift-compositions/swift-url-form-coding)** - URL form encoding/decoding (`application/x-www-form-urlencoded`)
+- **[swift-multipart-form-coding](https://github.com/swift-compositions/swift-multipart-form-coding)** - Multipart form data with file uploads (`multipart/form-data`)
 
 ## Installation
 
@@ -18,7 +18,7 @@ Add this package to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/coenttb/swift-form-coding", from: "0.1.0")
+    .package(url: "https://github.com/swift-compositions/swift-form-coding", from: "0.1.0")
 ]
 ```
 
@@ -111,12 +111,12 @@ If you only need one type of form coding, import the specific package instead:
 ```swift
 // Just URL form encoding
 dependencies: [
-    .package(url: "https://github.com/coenttb/swift-url-form-coding", from: "0.1.0")
+    .package(url: "https://github.com/swift-compositions/swift-url-form-coding", from: "0.1.0")
 ]
 
 // Just multipart file uploads
 dependencies: [
-    .package(url: "https://github.com/coenttb/swift-multipart-form-coding", from: "0.1.0")
+    .package(url: "https://github.com/swift-compositions/swift-multipart-form-coding", from: "0.1.0")
 ]
 ```
 
@@ -128,7 +128,7 @@ Both underlying packages support optional URLRouting integration via Swift Packa
 // In your Package.swift
 dependencies: [
     .package(
-        url: "https://github.com/coenttb/swift-form-coding",
+        url: "https://github.com/swift-compositions/swift-form-coding",
         from: "0.1.0"
     )
 ]
@@ -171,5 +171,5 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Related Packages
 
-- [swift-url-form-coding](https://github.com/coenttb/swift-url-form-coding) - URL form encoding/decoding
-- [swift-multipart-form-coding](https://github.com/coenttb/swift-multipart-form-coding) - Multipart form data with file uploads
+- [swift-url-form-coding](https://github.com/swift-compositions/swift-url-form-coding) - URL form encoding/decoding
+- [swift-multipart-form-coding](https://github.com/swift-compositions/swift-multipart-form-coding) - Multipart form data with file uploads

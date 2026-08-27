@@ -14,8 +14,8 @@ let package = Package(
         .library(name: "FormCoding", targets: ["FormCoding"])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-foundations/swift-url-form-coding.git", branch: "main"),
-        .package(url: "https://github.com/swift-foundations/swift-multipart-form-coding.git", branch: "main")
+        .package(url: "https://github.com/swift-compositions/swift-url-form-coding.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-multipart-form-coding.git", branch: "main")
     ],
     targets: [
         .target(
