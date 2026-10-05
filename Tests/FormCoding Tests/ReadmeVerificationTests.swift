@@ -1,6 +1,7 @@
 import Foundation
 import HTML_Standard
 import RFC_2045
+import RFC_2045_Coder
 import RFC_2046
 import Testing
 import URLFormCoding
