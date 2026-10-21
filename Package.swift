@@ -8,14 +8,14 @@ let package = Package(
         .macOS("27"),
         .iOS("27"),
         .tvOS("27"),
-        .watchOS("27")
+        .watchOS("27"),
     ],
     products: [
         .library(name: "FormCoding", targets: ["FormCoding"])
     ],
     dependencies: [
         .package(url: "https://github.com/swift-compositions/swift-url-form-coding.git", branch: "main"),
-        .package(url: "https://github.com/swift-compositions/swift-multipart-form-coding.git", branch: "main")
+        .package(url: "https://github.com/swift-compositions/swift-multipart-form-coding.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -28,12 +28,13 @@ let package = Package(
         .testTarget(
             name: "FormCoding Tests",
             dependencies: ["FormCoding"]
-        )
+        ),
     ]
 )
 
 for target in package.targets {
-    target.swiftSettings = (target.swiftSettings ?? []) + [
-        .enableUpcomingFeature("MemberImportVisibility")
-    ]
+    target.swiftSettings =
+        (target.swiftSettings ?? []) + [
+            .enableUpcomingFeature("MemberImportVisibility")
+        ]
 }
